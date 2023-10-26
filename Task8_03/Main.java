@@ -5,10 +5,9 @@ import java.util.ArrayList;
 
 public class Main {
     public static void doubleValues(ArrayList<String> words) {
-        String temp=null;
-        for (int i = 0; i <words.size(); i++) {
-            temp=words.get(i).concat(", "+words.get(i));
-            words.set(i, temp);
+        int n= words.size();
+        for (int i = 0; i <n; i++) {
+            words.add(2*i, words.get(2*i));
         }
     }
     public static void main(String[] args) {
